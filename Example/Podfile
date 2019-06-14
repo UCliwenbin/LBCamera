@@ -1,0 +1,15 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LBCamera_Example' do
+  pod 'LBCamera', :path => '../'
+  pod 'Masonry'
+
+  target 'LBCamera_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
