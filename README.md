@@ -22,7 +22,7 @@ pod 'LBCamera'
 
 ## Author
 
-549411835@qq.com, wenbin.li01@ucarinc.com
+549411835@qq.com
 
 ## License
 
