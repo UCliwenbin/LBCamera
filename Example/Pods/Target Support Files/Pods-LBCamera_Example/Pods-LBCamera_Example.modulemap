@@ -1,0 +1,6 @@
+framework module Pods_LBCamera_Example {
+  umbrella header "Pods-LBCamera_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,23 @@
+PODS:
+  - LBCamera (0.1.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - LBCamera (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  LBCamera:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LBCamera: ba6888e775bf006c850f651dc945c30943636589
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 2304533d4cf74011c432345177776122600699e3
+
+COCOAPODS: 1.5.3

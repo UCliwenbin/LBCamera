@@ -1,0 +1,6 @@
+framework module Pods_LBCamera_Tests {
+  umbrella header "Pods-LBCamera_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
