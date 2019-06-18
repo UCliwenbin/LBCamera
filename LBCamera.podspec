@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBCamera'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = '自定义相机,利用AVCaptureSession来自定义相机'
 
 # This description is used to generate tags and improve search results.
