@@ -10,9 +10,7 @@
 #import "UCARCameraTitleBarView.h"
 #import "macro_ui.h"
 #import "UIImage+UCARAppearanceImage.h"
-@import Masonry;
-
-
+#import <Masonry/Masonry.h>
 
 #pragma mark - @class
 

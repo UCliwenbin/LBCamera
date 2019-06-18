@@ -13,7 +13,7 @@
 #import "UIImage+UCARAppearanceImage.h"
 #import "UCARVerticalCameraBaseView.h"
 #import <AssetsLibrary/AssetsLibrary.h>
-
+#import <Masonry/Masonry.h>
 
 @interface UCARCameraViewController ()<UCARCameraAction>
 

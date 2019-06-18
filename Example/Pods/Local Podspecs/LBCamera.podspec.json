@@ -1,6 +1,6 @@
 {
   "name": "LBCamera",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "summary": "自定义相机,利用AVCaptureSession来自定义相机",
   "description": "通过将拍照预览容器暴露出去，可以方便的自定义相机展示",
   "homepage": "https://github.com/UCliwenbin/LBCamera",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/UCliwenbin/LBCamera.git",
-    "tag": "v#{s.version}"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"

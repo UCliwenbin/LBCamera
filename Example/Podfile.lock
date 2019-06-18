@@ -1,5 +1,5 @@
 PODS:
-  - LBCamera (0.1.1):
+  - LBCamera (1.0.1):
     - Masonry
   - Masonry (1.1.0)
 
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LBCamera: 9e4eac41daea2499066a64f5e476eafc232760ac
+  LBCamera: c0314ed2a8e7e63b8aef6d5a518c052fdd82e50a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
 PODFILE CHECKSUM: 2304533d4cf74011c432345177776122600699e3
