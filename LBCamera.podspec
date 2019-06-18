@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBCamera'
-  s.version          = '0.1.0'
-  s.summary          = '自定义相机'
+  s.version          = '1.0.1'
+  s.summary          = '自定义相机,利用AVCaptureSession来自定义相机'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,27 +17,28 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-    1、利用AVCaptureSession来自定义相机
-    2、通过将拍照预览容器暴露出去，可以方便的自定义相机展示
-                       DESC
+  s.description      = '通过将拍照预览容器暴露出去，可以方便的自定义相机展示'
 
-  s.homepage         = 'https://github.com/UCliwenbin/LBCamera.git'
+  s.homepage         = 'https://github.com/UCliwenbin/LBCamera'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lwb' => '549411835@qq.com' }
-  s.source           = { :git => 'https://github.com/UCliwenbin/LBCamera.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/UCliwenbin/LBCamera.git', :tag => 'v#{s.version}'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.platform = :ios,'8.0'
+  s.requires_arc = true
 
   s.source_files = 'LBCamera/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'LBCamera' => ['LBCamera/Assets/*.png']
-  # }
+
+   s.resource_bundle = {
+     'LBCamera' => ['LBCamera/Assets/*']
+   }
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.frameworks = 'UIKit', 'AVFoundation'
+   s.dependency 'Masonry'
 end

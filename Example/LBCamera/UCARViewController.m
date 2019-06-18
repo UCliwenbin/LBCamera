@@ -7,10 +7,13 @@
 //
 
 #import "UCARViewController.h"
+#import "UCARCameraViewController.h"
+@import Masonry;
 
 @interface UCARViewController ()
 
 #pragma mark - 私有属性
+@property (nonatomic, strong) UIButton *button;
 
 @end
 
@@ -26,6 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor yellowColor];
     [self configureNavigationbar];
     [self createSubViews];
     [self createSubViewsConstraints];
@@ -74,6 +78,12 @@
 
 #pragma mark - Public Methods
 
+- (void)buttonAction {
+    UCARCameraViewController *vc = [UCARCameraViewController new];
+    vc.cameraTitle = @"自定义相机";
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 #pragma mark - Private Methods
 // 配置导航栏
 - (void)configureNavigationbar {
@@ -82,15 +92,28 @@
 
 // 添加子视图
 - (void)createSubViews {
-    
+    [self.view addSubview:self.button];
 }
 
 // 添加约束
 - (void)createSubViewsConstraints {
-    
+    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(self.view);
+        make.width.mas_equalTo(300.f);
+        make.height.mas_equalTo(300.f);
+    }];
 }
 
 #pragma mark - Getters and Setters
+
+- (UIButton *)button {
+    if (!_button) {
+        _button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [_button setTitle:@"点击打开相机" forState:UIControlStateNormal];
+        [_button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _button;
+}
 
 
 @end

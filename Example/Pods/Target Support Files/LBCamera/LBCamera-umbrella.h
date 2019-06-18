@@ -10,6 +10,14 @@
 #endif
 #endif
 
+#import "macro_ui.h"
+#import "UCARCameraViewController.h"
+#import "UCARCameraPreview.h"
+#import "UIImage+UCARAppearanceImage.h"
+#import "UCARCameraTitleBarView.h"
+#import "UCARCameraToolBarView.h"
+#import "UCARCameraAction.h"
+#import "UCARVerticalCameraBaseView.h"
 
 FOUNDATION_EXPORT double LBCameraVersionNumber;
 FOUNDATION_EXPORT const unsigned char LBCameraVersionString[];

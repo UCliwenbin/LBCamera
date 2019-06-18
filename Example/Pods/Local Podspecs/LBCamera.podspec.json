@@ -1,22 +1,37 @@
 {
   "name": "LBCamera",
-  "version": "0.1.0",
-  "summary": "A short description of LBCamera.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/549411835@qq.com/LBCamera",
+  "version": "0.1.1",
+  "summary": "自定义相机,利用AVCaptureSession来自定义相机",
+  "description": "通过将拍照预览容器暴露出去，可以方便的自定义相机展示",
+  "homepage": "https://github.com/UCliwenbin/LBCamera",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "549411835@qq.com": "wenbin.li01@ucarinc.com"
+    "lwb": "549411835@qq.com"
   },
   "source": {
-    "git": "https://github.com/549411835@qq.com/LBCamera.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/UCliwenbin/LBCamera.git",
+    "tag": "v#{s.version}"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LBCamera/Classes/**/*"
+  "requires_arc": true,
+  "source_files": "LBCamera/Classes/**/*",
+  "resource_bundles": {
+    "LBCamera": [
+      "LBCamera/Assets/*"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "AVFoundation"
+  ],
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  }
 }
