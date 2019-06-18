@@ -6,9 +6,10 @@
 //  Copyright © 2019 szzc. All rights reserved.
 //
 
-@import Masonry;
+
 #import "UCARVerticalCameraBaseView.h"
 #import "macro_ui.h"
+#import <Masonry/Masonry.h>
 
 @implementation UCARVerticalCameraBaseView
 

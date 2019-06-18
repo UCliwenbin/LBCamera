@@ -6,7 +6,6 @@
 //  Copyright © 2018年 szzc. All rights reserved.
 //
 
-@import Masonry;
 #import "UIImage+UCARAppearanceImage.h"
 
 @implementation UIImage (UCARAppearanceImage)
